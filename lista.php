@@ -90,9 +90,10 @@
             margin-bottom: 20px;
             display: flex;
 		}
-		
+
 		.btn:hover {
 			background-color: #303085;
+			color: #fff;
 		}
 	</style>
 </head>
