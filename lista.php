@@ -53,16 +53,6 @@
 			font-size: 16px;
 		}
 
-		input[type="submit"] {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			font-size: 16px;
-		}
-
 		input[type="submit"]:hover {
 			background-color: #303085;
 		}
