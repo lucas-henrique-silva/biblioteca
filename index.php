@@ -5,7 +5,10 @@
   <title>Biblioteca Virtual - Página Inicial</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+    /* Import das fontes */
+    @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
     /* Estilos gerais */
     body {
@@ -16,7 +19,7 @@
       line-height: 1.5;
     }
     a {
-      color: #333;
+      color: black;
       font-weight: bold;
       text-decoration: none;
     }
@@ -24,30 +27,34 @@
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      background-color: #3e8e41;
+      background-color: #303085;
       padding: 5px;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
       transition-duration: 0.2s;
     }
     header {
-      background-color: #4CAF50;
+      background-color: #4C71D4;
       padding: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .cabecalho {
-        color: #333;
-        font-family: 'Titan One', sans-serif;
+        color: black;
+        font-family: 'Bungee Inline', sans-serif;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
     h1 {
       margin: 0;
       font-size: 2em;
-      font-weight: normal;
+      font-weight: bold;
+      text-shadow: 2px 2px px rgba(0, 0, 0, 0.1);
     }
     nav {
       margin-top: 20px;
       display: flex;
       justify-content: center;
+      font-family: 'Roboto', sans-serif;
     }
     nav ul {
       list-style: none;
@@ -62,6 +69,7 @@
     main {
       margin: 50px auto;
       text-align: center;
+      font-family: 'Roboto', sans-serif;
     }
     h2 {
       font-size: 2em;
@@ -83,9 +91,11 @@
       bottom: 0;
       position: fixed;
       width: 100%;
+      font-family: 'Roboto', sans-serif;
     }
     footer p {
       margin: 0;
+      color: white;
     }
   </style>
 </head>
@@ -101,11 +111,13 @@
     </nav>
   </header>
   <main>
+
     <h2>Bem-vindo(a) à Biblioteca Virtual</h2>
-    <p>Navegue pelas páginas para cadastrar e consultar livros em nossa biblioteca.</p>
+    <p>Navegue pelas páginas para cadastrar, apagar e consultar livros em nosso acervo.</p>
+
   </main>
   <footer>
-    <p>&copy; 2023 Biblioteca Virtual. Todos os direitos reservados.</p>
+    <p>&copy; 2023 Biblioteca Virtual - Feito por Lucas Henrique.</p>
   </footer>
 </body>
 </html>

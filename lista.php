@@ -3,6 +3,8 @@
 <head>
 	<title>Lista de Livros</title>
 	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
 		body {
 			font-family: Arial, sans-serif;
 			background-color: #f4f4f4;
@@ -10,7 +12,9 @@
 
 		h1 {
 			text-align: center;
-			color: #666;
+			color: black;
+			font-family: 'Bungee Inline', sans-serif;
+			text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 		}
 
 		table {
@@ -31,7 +35,7 @@
 		}
 
 		th {
-			background-color: #4CAF50;
+			background-color: #3C6991;
 			color: #fff;
             text-align: center;
 		}
@@ -60,20 +64,22 @@
 		}
 
 		input[type="submit"]:hover {
-			background-color: #3e8e41;
+			background-color: #303085;
 		}
 
 		a {
-			color: #4CAF50;
+			color: #4C70D4;
 			text-decoration: none;
 		}
 
 		a:hover {
-			text-decoration: underline;
+			text-decoration: none;
+			text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+			color: black;
 		}
 
 		.btn {
-			background-color: #4CAF50;
+			background-color: #4C70D4;
 			color: #fff;
 			border: none;
 			padding: 10px 20px;
@@ -84,16 +90,16 @@
             margin-bottom: 20px;
             display: flex;
 		}
-
+		
 		.btn:hover {
-			background-color: #3e8e41;
+			background-color: #303085;
 		}
 	</style>
 </head>
 <body>
+	<a href="cadastro.php" class="btn">Adicionar Livro ➕</a>
+    <a href="index.php" class="btn">Voltar a página inicial ⬅️</a>
 	<h1>Lista de Livros 📚</h1>
-	<a href="cadastro.php" class="btn">Adicionar Livro</a>
-    <a href="index.php" class="btn">Voltar a página inicial</a>
 	<table>
 		<tbody>
 			<?php

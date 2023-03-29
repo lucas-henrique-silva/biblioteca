@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		}
 		button[type="submit"], .btn {
 			display: inline-block;
-			background-color: #333;
+			background-color: #4C70D4;
 			color: #fff;
 			padding: 10px 20px;
 			border: none;
@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			margin-bottom: 20px;
 		}
 		button[type="submit"]:hover, .btn:hover {
-			background-color: #666;
+			background-color: #303085;
 		}
 		.error {
 			color: #ff0000;

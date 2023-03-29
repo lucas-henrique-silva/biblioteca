@@ -4,6 +4,8 @@
 	<title>Cadastro de Livros</title>
 
     <style>
+		@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+
 		body {
 			font-family: Arial, sans-serif;
 			background-color: #f4f4f4;
@@ -11,7 +13,8 @@
 
 		h1 {
 			text-align: center;
-			color: #666;
+			color: black;
+			font-family: 'Bungee Inline', sans-serif;
 		}
 
 		form {
@@ -27,6 +30,7 @@
 			display: inline-block;
 			margin-bottom: 5px;
 			color: #555;
+			font-weight: bold;
 		}
 
 		input[type="text"],
@@ -40,7 +44,7 @@
 		}
 
 		input[type="submit"] {
-			background-color: #4CAF50;
+			background-color: #4C70D4;
 			color: #fff;
 			border: none;
 			padding: 10px 20px;
@@ -50,7 +54,7 @@
 		}
 
 		input[type="submit"]:hover {
-			background-color: #3e8e41;
+			background-color: #303085;
 		}
 	</style>
 </head>
@@ -71,9 +75,11 @@
 
 		<input type="submit" value="Cadastrar ✔️">
 	</form>
-
-    <form action="lista.php" method="get">
-		<input type="submit" value="Consultar Livros">
+		<br>
+		<br>	
+    <form action="index.php" method="get">
+		<input type="submit" value="Voltar a página inicial ⬅️">
 	</form>
+	
 </body>
 </html>
