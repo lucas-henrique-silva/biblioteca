@@ -39,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			border: 1px solid #ccc;
 			border-radius: 5px;
 			max-width: 500px;
+			box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 		}
 		label {
 			display: block;
@@ -69,6 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		}
 		button[type="submit"]:hover, .btn:hover {
 			background-color: #0C25F5;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.50);
 		}
 		.error {
 			color: #ff0000;

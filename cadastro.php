@@ -56,6 +56,7 @@
 
 		input[type="submit"]:hover {
 			background-color: #0C25F5;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.50);
 		}
 	</style>
 </head>

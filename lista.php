@@ -59,14 +59,16 @@
 		}
 
 		a {
-			color: #0C25F5;
+			color: black;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 			text-decoration: none;
 		}
 
 		a:hover {
-			text-decoration: none;
+			text-decoration: underline;
 			text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-			color: black;
+			color: #0C25F5;
+			cursor: pointer;
 		}
 
 		.btn {
