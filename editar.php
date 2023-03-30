@@ -22,15 +22,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <style>
+		@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+    	@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');	
+
 		body {
 			background-color: #ddd;
 			font-family: Arial, sans-serif;
 			font-size: 16px;
 		}
 		h1 {
-			margin-top: 20px;
 			text-align: center;
-			color: #333;
+			color: black;
+			font-family: 'Bungee Inline', sans-serif;
+			text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 		}
 		form {
 			margin: 20px auto;
@@ -78,6 +82,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			margin-bottom: 10px;
 		}
 	</style>
+
+<h1>📚 Editar Livros 📚</h1>
 
 <form method="POST">
     <input type="hidden" name="id" value="<?php echo $livro["id"]; ?>">
