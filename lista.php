@@ -7,7 +7,7 @@
 
 		body {
 			font-family: Arial, sans-serif;
-			background-color: #f4f4f4;
+			background-color: #ddd;
 		}
 
 		h1 {
@@ -27,17 +27,18 @@
 		}
 
 		th, td {
-			padding: 10px;
+			padding: 9px;
 			text-align: left;
 			border-bottom: 1px solid #ddd;
             border: 1.6px solid black;
-			font-size: 16px;
+			font-size: 15px;
 		}
 
 		th {
-			background-color: #3C6991;
+			background-color: #0093E5;
 			color: #fff;
             text-align: center;
+			font-weight: bold;
 		}
 
 		tr:hover {
@@ -54,11 +55,11 @@
 		}
 
 		input[type="submit"]:hover {
-			background-color: #303085;
+			background-color: #0D66FF;
 		}
 
 		a {
-			color: #4C70D4;
+			color: #0C25F5;
 			text-decoration: none;
 		}
 
@@ -69,7 +70,8 @@
 		}
 
 		.btn {
-			background-color: #4C70D4;
+			box-shadow: 1px 1px 4px #333;
+			background-color: #0D66FF;
 			color: #fff;
 			border: none;
 			padding: 10px 20px;
@@ -82,15 +84,16 @@
 		}
 
 		.btn:hover {
-			background-color: #303085;
+			background-color: #0C25F5;
 			color: #fff;
+			font-weight: bold;
 		}
 	</style>
 </head>
 <body>
 	<a href="cadastro.php" class="btn">Adicionar Livro ➕</a>
     <a href="index.php" class="btn">Voltar a página inicial ⬅️</a>
-	<h1>Lista de Livros 📚</h1>
+	<h1>📚 Lista de Livros 📚</h1>
 	<table>
 		<tbody>
 			<?php
@@ -111,8 +114,7 @@
                 echo "<td><a href='editar.php?id=" . $row["id"] . "'>Editar ✏️</a> | <a href='deletar.php?id=" . $row["id"] . "' onclick='return confirm(\"Tem certeza que deseja deletar este livro?\")'>Deletar ❌</a>";
                 echo "</tr>";
             }
-            
-            echo "</table>";
+            	echo "</table>";
 			?>
 		</tbody>
 	</table>

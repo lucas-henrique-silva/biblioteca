@@ -22,9 +22,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <style>
-		/* Estilos CSS para a página */
 		body {
-			background-color: #f2f2f2;
+			background-color: #ddd;
 			font-family: Arial, sans-serif;
 			font-size: 16px;
 		}
@@ -45,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			display: block;
 			margin-bottom: 5px;
 			color: #333;
+			font-weight: bold;
 		}
 		input[type="text"] {
 			width: 100%;
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		}
 		button[type="submit"], .btn {
 			display: inline-block;
-			background-color: #4C70D4;
+			background-color: #0D66FF;
 			color: #fff;
 			padding: 10px 20px;
 			border: none;
@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			margin-bottom: 20px;
 		}
 		button[type="submit"]:hover, .btn:hover {
-			background-color: #303085;
+			background-color: #0C25F5;
 		}
 		.error {
 			color: #ff0000;
@@ -92,5 +92,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <label>Ano:</label><br>
     <input type="text" name="ano" value="<?php echo $livro["ano"]; ?>"><br><br>
 
-    <input type="submit" value="Salvar" class="btn">
+    <input type="submit" value="Salvar  ☑️" class="btn">
 </form>
