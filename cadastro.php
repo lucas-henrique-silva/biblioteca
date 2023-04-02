@@ -14,7 +14,11 @@
 		h1 {
 			text-align: center;
 			color: black;
+<<<<<<< HEAD
 			font-family: 'Righteous', sans-serif;
+=======
+			font-family: 'Bungee Inline', sans-serif;
+>>>>>>> c59f21166124bdf30d0133b41cec3f3a232f3bd3
 
 		}
 
