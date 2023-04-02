@@ -4,17 +4,18 @@
 	<title>Cadastro de Livros</title>
 
     <style>
-		@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 		body {
 			font-family: Arial, sans-serif;
-			background-color: #f4f4f4;
+			background-color: #ddd;
 		}
 
 		h1 {
 			text-align: center;
 			color: black;
-			font-family: 'Bungee Inline', sans-serif;
+			font-family: 'Righteous', sans-serif;
+
 		}
 
 		form {
@@ -29,7 +30,7 @@
 		label {
 			display: inline-block;
 			margin-bottom: 5px;
-			color: #555;
+			color: black;
 			font-weight: bold;
 		}
 
@@ -44,7 +45,7 @@
 		}
 
 		input[type="submit"] {
-			background-color: #4C70D4;
+			background-color: #0D66FF;
 			color: #fff;
 			border: none;
 			padding: 10px 20px;
@@ -54,12 +55,13 @@
 		}
 
 		input[type="submit"]:hover {
-			background-color: #303085;
+			background-color: #0C25F5;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.50);
 		}
 	</style>
 </head>
 <body>
-	<h1>Cadastro de Livros 📚</h1>
+	<h1>📚 Cadastro de Livros 📚</h1>
 	<form action="cadastrar.php" method="post">
 		<label for="titulo">Título:</label><br>
 		<input type="text" id="titulo" name="titulo" required><br><br>

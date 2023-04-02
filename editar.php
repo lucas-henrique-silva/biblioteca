@@ -22,16 +22,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <style>
-		/* Estilos CSS para a página */
+		@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+    	@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');	
+
 		body {
-			background-color: #f2f2f2;
+			background-color: #ddd;
 			font-family: Arial, sans-serif;
 			font-size: 16px;
 		}
 		h1 {
-			margin-top: 20px;
 			text-align: center;
-			color: #333;
+			color: black;
+			font-family: 'Bungee Inline', sans-serif;
+			text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 		}
 		form {
 			margin: 20px auto;
@@ -40,11 +43,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			border: 1px solid #ccc;
 			border-radius: 5px;
 			max-width: 500px;
+			box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 		}
 		label {
 			display: block;
 			margin-bottom: 5px;
 			color: #333;
+			font-weight: bold;
 		}
 		input[type="text"] {
 			width: 100%;
@@ -57,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		}
 		button[type="submit"], .btn {
 			display: inline-block;
-			background-color: #4C70D4;
+			background-color: #0D66FF;
 			color: #fff;
 			padding: 10px 20px;
 			border: none;
@@ -68,7 +73,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			margin-bottom: 20px;
 		}
 		button[type="submit"]:hover, .btn:hover {
-			background-color: #303085;
+			background-color: #0C25F5;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.50);
 		}
 		.error {
 			color: #ff0000;
@@ -76,6 +82,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			margin-bottom: 10px;
 		}
 	</style>
+
+<h1>📚 Editar Livros 📚</h1>
 
 <form method="POST">
     <input type="hidden" name="id" value="<?php echo $livro["id"]; ?>">
@@ -92,5 +100,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <label>Ano:</label><br>
     <input type="text" name="ano" value="<?php echo $livro["ano"]; ?>"><br><br>
 
-    <input type="submit" value="Salvar" class="btn">
+    <input type="submit" value="Salvar  ☑️" class="btn">
 </form>

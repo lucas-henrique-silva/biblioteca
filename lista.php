@@ -3,17 +3,17 @@
 <head>
 	<title>Lista de Livros</title>
 	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 		body {
 			font-family: Arial, sans-serif;
-			background-color: #f4f4f4;
+			background-color: #ddd;
 		}
 
 		h1 {
 			text-align: center;
 			color: black;
-			font-family: 'Bungee Inline', sans-serif;
+			font-family: 'Righteous', sans-serif;
 			text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 		}
 
@@ -27,17 +27,18 @@
 		}
 
 		th, td {
-			padding: 10px;
+			padding: 9px;
 			text-align: left;
 			border-bottom: 1px solid #ddd;
             border: 1.6px solid black;
-			font-size: 16px;
+			font-size: 15px;
 		}
 
 		th {
-			background-color: #3C6991;
+			background-color: #0093E5;
 			color: #fff;
             text-align: center;
+			font-weight: bold;
 		}
 
 		tr:hover {
@@ -54,22 +55,25 @@
 		}
 
 		input[type="submit"]:hover {
-			background-color: #303085;
+			background-color: #0D66FF;
 		}
 
 		a {
-			color: #4C70D4;
+			color: black;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 			text-decoration: none;
 		}
 
 		a:hover {
-			text-decoration: none;
+			text-decoration: underline;
 			text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-			color: black;
+			color: #0C25F5;
+			cursor: pointer;
 		}
 
 		.btn {
-			background-color: #4C70D4;
+			box-shadow: 1px 1px 4px #333;
+			background-color: #0D66FF;
 			color: #fff;
 			border: none;
 			padding: 10px 20px;
@@ -82,15 +86,16 @@
 		}
 
 		.btn:hover {
-			background-color: #303085;
+			background-color: #0C25F5;
 			color: #fff;
+			font-weight: bold;
 		}
 	</style>
 </head>
 <body>
 	<a href="cadastro.php" class="btn">Adicionar Livro ➕</a>
     <a href="index.php" class="btn">Voltar a página inicial ⬅️</a>
-	<h1>Lista de Livros 📚</h1>
+	<h1>📚 Lista de Livros 📚</h1>
 	<table>
 		<tbody>
 			<?php
@@ -111,8 +116,7 @@
                 echo "<td><a href='editar.php?id=" . $row["id"] . "'>Editar ✏️</a> | <a href='deletar.php?id=" . $row["id"] . "' onclick='return confirm(\"Tem certeza que deseja deletar este livro?\")'>Deletar ❌</a>";
                 echo "</tr>";
             }
-            
-            echo "</table>";
+            	echo "</table>";
 			?>
 		</tbody>
 	</table>
